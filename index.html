@@ -46,6 +46,22 @@ a:hover {
   color: #FFC6BF;
 }
 
+a
+{
+  color: #7F1330;
+}
+
+a button
+{
+  text-decoration: underline;
+  margin-left:500px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size:20px; 
+  font-weight: bold;
+}
+
+
   </style>
 </head>
 <body class="bg-white relative">
@@ -84,6 +100,16 @@ a:hover {
     }
     .dark-mode .shadow-md {
       box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.06);
+    }
+
+    .dark-mode a:hover 
+    {
+    color: #FE8982;
+    }
+
+    .dark-mode a
+    {
+      color: #FFC6BF;
     }
   </style>
   <div id="particles-js"></div>
@@ -130,7 +156,7 @@ a:hover {
     </a> -->
  
     <a href="instructions.html">
-      <button style = "margin-left:500px; color: #7F1330; margin-top: 40px; margin-bottom: 20px; font-size:20px; font-weight: bold; ">
+      <button id="inst-button">
         Click here to see how I created my Website!
       </button>
       </a>
@@ -332,6 +358,8 @@ elevatorBtnDiv.onclick = () => {
   elevator.elevate();
 };
 
+
+
 footerContent.appendChild(elevatorBtnDiv);
 document.body.appendChild(footer);
   </script>
@@ -354,6 +382,7 @@ document.body.appendChild(footer);
         animation: pulsate 1.5s linear infinite;
       }
     </style>
+    
     <button id="scroll-down-btn" class="fixed bottom-4 left-1/2 text-black p-2 rounded shadow-md opacity-80 transition-colors duration-200 ease-in-out dark:bg-gray-800 dark:text-white">
       <i class="fa-solid fa-v"></i>
     </button>
