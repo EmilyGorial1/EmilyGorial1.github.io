@@ -10,10 +10,6 @@
   <title>Emily Gorial</title>
   <style>
 
-.body
-{
-  background-color: #954510;
-}
 
 h1, h2, h3, h4
 {
@@ -108,14 +104,6 @@ a:hover {
       </div>
     </div>
   </div>
-  <!-- <div id="content-container" class="flex flex-col md:flex-row w-full flex-wrap mt-6 mb-20 mx-1 md:mx-0">
-    <div id="posts-container" class="w-full md:w-1/3 px-4 py-5 mb-5 md:mb-0">
-      <h3 class="text-2xl font-semibold mb-4"><i class="fa-solid fa-magnifying-glass"></i> Digital Endeavors</h3>
-      <h4 class="text-sm italic mb-4">A collection of thoughts and findings</h4>
-      <div id="posts-list" class="space-y-4"> -->
-        <!-- Fetched Posts Markdown files will be displayed here -->
-      <!-- </div>
-    </div> -->
     
     <div id="projects-container" class="w-full px-4 py-5 mb-5 md:mb-0">
       <h3 class="text-2xl font-semibold mb-4"><i class="fa-solid fa-code"></i> Projects</h3>
@@ -134,22 +122,24 @@ a:hover {
         toggleBtn.innerText = isDarkModeOn ? "☀️" : "🌓";
       });
     </script>
-    <!-- <div id="listening-container" class="w-full px-4 py-5">
-      <h3 class="text-2xl font-semibold mb-4"><i class="fab fa-spotify"></i> What's on my Playlist</h3>
-      <div id="listening-list" class="flex flex-wrap mx-auto md:-mx-2 md:space-x-4"> -->
-        <!-- Fetched Listening Markdown files will be displayed here -->
-      <!-- </div>
-    </div> -->
-  <!-- </div> -->
+   
+    <!-- <a href="instructions.html">
+    <button style = "margin-left:800px;  color: #7F1330; margin-top: 60px; margin-bottom:30px; font-size: 20px; font-weight: bold;">
+    Click here to see how I created this Website!
+    </button>
+    </a> -->
+ 
+    <a href="instructions.html">
+      <button style = "margin-left:500px; color: #7F1330; margin-top: 40px; margin-bottom: 20px; font-size:20px; font-weight: bold; ">
+        Click here to see how I created my Website!
+      </button>
+      </a>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
   <script>
-      // const postsList = document.getElementById('posts-list');
-    // projectsList.innerHTML = '';
- 
- 
+  
     projectsList = document.getElementById('projects-list');
-const converter = new showdown.Converter({
+    const converter = new showdown.Converter({
   simpleLineBreaks: true,
   strikethrough: true,
   tables: true,
